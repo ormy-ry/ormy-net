@@ -16,7 +16,7 @@ collections:
           label: 'Template Key',
           name: 'templateKey',
           widget: 'hidden',
-          default: 'event-post',
+          default: 'EventPost',
         }
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
