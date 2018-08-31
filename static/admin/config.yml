@@ -19,7 +19,12 @@ collections:
           default: 'event-post',
         }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          format: 'DD. MM. YYYY hh:mm',
+        }
       - { label: 'Location', name: 'location', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
