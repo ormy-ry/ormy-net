@@ -6,25 +6,45 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "event"
-    label: "Event"
-    folder: "src/pages/event"
+  - name: 'event'
+    label: 'Event'
+    folder: 'src/pages/event'
     create: true
-    slug: "{{slug}}-{{day}}-{{month}}-{{year}}"
+    slug: '{{slug}}-{{day}}-{{month}}-{{year}}'
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "event-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'event-post',
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Location', name: 'location', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  - name: "pages"
-    label: "Pages"
+  - name: 'site'
+    label: 'Site'
     files:
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+      - file: 'src/pages/about/index.md'
+        label: 'About'
+        name: 'about'
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-      
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'about-page',
+            }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - file: 'src/pages/config.md'
+        label: 'Config'
+        name: 'config'
+        widget: 'object'
+        fields:
+          - { label: 'test', name: 'test', widget: 'string' }
+          - { label: 'test', name: 'test', widget: 'string' }
+          - { label: 'test', name: 'test', widget: 'string' }
+          - { label: 'test', name: 'test', widget: 'string' }
+          - { label: 'test', name: 'test', widget: 'string' }
