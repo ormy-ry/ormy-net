@@ -18,6 +18,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               title
               date
               location
+              templateKey
             }
           }
         }
@@ -36,7 +37,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
-        component: path.resolve(`src/templates/EventPost.jsx`),
+        component: path.resolve(
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.jsx`
+        ),
         // additional data can be passed via context
         context: {
           id,

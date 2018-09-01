@@ -2,13 +2,26 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
+
 import Content, { HTMLContent } from '../components/Content'
+import Card from './../components/Card'
+
+const EventInfo = styled.div`
+  display: block;
+  padding: 1rem 0 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #b3b3b3;
+`
 
 export const EventPostTemplate = ({
   content,
   contentComponent,
   title,
   helmet,
+  date,
+  location,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -16,14 +29,15 @@ export const EventPostTemplate = ({
     <section className="section">
       {helmet || ''}
       <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            {content}
-          </div>
-        </div>
+        <Card>
+          <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            {title}
+          </h1>
+          <PostContent content={content} />
+          <EventInfo>
+            <span>{`${date} ${location}`}</span>
+          </EventInfo>
+        </Card>
       </div>
     </section>
   )
@@ -36,8 +50,10 @@ const EventPost = ({ data }) => {
     <EventPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+      helmet={<Helmet title={`ÖRMY | ${post.frontmatter.title}`} />}
       title={post.frontmatter.title}
+      date={post.frontmatter.date}
+      location={post.frontmatter.location}
     />
   )
 }

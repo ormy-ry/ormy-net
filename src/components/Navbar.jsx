@@ -2,20 +2,22 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Navbar = () => (
-  <nav className="navbar has-background-black-bis is-dark">
+  <nav className="navbar">
     <div className="container">
-      <div className="navbar-start">
-        <Link className="navbar-item " exact to="/">
-          ETUSIVU
-        </Link>
-        <Link className="navbar-item " to="/about">
-          INFO
-        </Link>
-        <Link className="navbar-item " to="/event">
-          TAPAHTUMAT
-        </Link>
+      <div className="navbar-menu is-active">
+        <div className="navbar-start">
+          <Link className="navbar-item" exact to="/">
+            ETUSIVU
+          </Link>
+          <Link className="navbar-item" to="/event">
+            TAPAHTUMAT
+          </Link>
+          <Link className="navbar-item" to="/info">
+            INFO
+          </Link>
+        </div>
+        <div className="navbar-end" />
       </div>
-      <div className="navbar-end" />
     </div>
   </nav>
 )
