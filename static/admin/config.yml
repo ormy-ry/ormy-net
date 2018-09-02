@@ -49,6 +49,18 @@ collections:
               widget: 'hidden',
               default: 'about',
             }
+      - file: 'src/pages/about/contact.md'
+        label: 'Contact'
+        name: 'contact'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - {
+              label: 'Identifier',
+              name: 'identifier',
+              widget: 'hidden',
+              default: 'contact',
+            }
   - name: 'config'
     label: 'Config'
     files:

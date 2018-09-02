@@ -3,6 +3,7 @@
 // Config vars
 $off-white: white
 $bg-dark: #212121
+$bg-darker: #181818
 $background: $bg-dark
 
 //$primary: 
@@ -14,21 +15,29 @@ $body-color: $white-ter
 $text-strong: $white-ter
 $text-light: $white-ter
 $text: $white-ter
-
+$title-color: $text
 $link: $grey-light
 
 //Navbar
 
 $navbar-item-color: $white-ter
-$navbar-background-color: #181818
+$navbar-background-color: $bg-darker
 $navbar-dropdown-background-color: $black-bis
 $navbar-dropdown-item-hover-background-color: $bg-dark
 $navbar-item-hover-background-color: $black-bis
 $navbar-box-shadow-size: 0 3px 6px
 $navbar-box-shadow-color: rgba(0, 0, 0, 0.23)
 
+// Table 
+$table-color: $white-ter
+$table-background-color: $bg-darker
+$table-row-hover-background-color: lighten($bg-darker, 5%)
+
 .navbar-item 
   outline: 0
+
+.title
+  color: $text
 
 .content .taglist
   list-style: none
