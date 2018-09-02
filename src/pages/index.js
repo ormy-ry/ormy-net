@@ -11,6 +11,7 @@ import EventList from './../components/EventList'
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
+    console.log(data)
     return (
       <div>
         <HeaderContainer>
@@ -30,7 +31,12 @@ export default class IndexPage extends React.Component {
               </Card>
             </div>
             <div className="column">
-              <Card />
+              <Card>
+                <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+                  {data.Contact.edges[0].node.frontmatter.title}
+                </h1>
+                <HTMLContent content={data.Contact.edges[0].node.html} />
+              </Card>
             </div>
           </div>
         </div>
@@ -76,6 +82,19 @@ export const pageQuery = graphql`
             title
             date
             location
+          }
+        }
+      }
+    }
+    Contact: allMarkdownRemark(
+      limit: 1
+      filter: { frontmatter: { identifier: { eq: "contact" } } }
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            title
           }
         }
       }
