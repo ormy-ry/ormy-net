@@ -7,7 +7,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 50) {
+      allMarkdownRemark(
+        limit: 50
+        filter: { frontmatter: { templateKey: { eq: "EventPost" } } }
+      ) {
         edges {
           node {
             id

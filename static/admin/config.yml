@@ -39,17 +39,31 @@ collections:
               label: 'Template Key',
               name: 'templateKey',
               widget: 'hidden',
-              default: 'about-page',
+              default: '',
             }
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'config'
+    label: 'Config'
+    files:
       - file: 'src/pages/config.md'
+        create: true
         label: 'Config'
         name: 'config'
         widget: 'object'
         fields:
-          - { label: 'test', name: 'test', widget: 'string' }
-          - { label: 'test', name: 'test', widget: 'string' }
+          - {
+              label: 'Header',
+              name: 'header',
+              widget: 'image',
+              default: 'static/img/header-bg.jpg',
+            }
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: '',
+            }
           - { label: 'test', name: 'test', widget: 'string' }
           - { label: 'test', name: 'test', widget: 'string' }
           - { label: 'test', name: 'test', widget: 'string' }
