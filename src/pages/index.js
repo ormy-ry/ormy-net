@@ -11,10 +11,14 @@ import EventList from './../components/EventList'
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
-    console.log(data)
     return (
       <div>
-        <HeaderContainer>
+        <HeaderContainer
+          style={{
+            backgroundImage:
+              'url(' + data.Header.edges[0].node.frontmatter.header + ')',
+          }}
+        >
           <Logo />
         </HeaderContainer>
         <div className="container">
@@ -96,6 +100,19 @@ export const pageQuery = graphql`
           html
           frontmatter {
             title
+          }
+        }
+      }
+    }
+    Header: allMarkdownRemark(
+      limit: 1
+      filter: { frontmatter: { identifier: { eq: "config" } } }
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            header
           }
         }
       }

@@ -9,7 +9,6 @@ const HeaderContainer = styled.div`
   height: 20rem;
   width: 100%;
   overflow: hidden;
-  background-image: url(${img});
   background-repeat: no-repeat;
   background-position: center top;
   border-bottom: 1px solid #181818;

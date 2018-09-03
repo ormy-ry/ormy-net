@@ -2,7 +2,6 @@ import React from 'react'
 import EventListItem from './EventListItem'
 
 const EventList = props => {
-  console.log(props)
   let eventsList = []
   props.eventsArr.edges.forEach(edge =>
     eventsList.push(
