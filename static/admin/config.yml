@@ -71,17 +71,20 @@ collections:
         widget: 'object'
         fields:
           - {
-              label: 'Header',
-              name: 'header',
-              widget: 'image',
-              default: 'static/img/header-bg.jpg',
-            }
-          - {
               label: 'Template Key',
               name: 'templateKey',
               widget: 'hidden',
               default: '',
             }
-          - { label: 'test', name: 'test', widget: 'string' }
-          - { label: 'test', name: 'test', widget: 'string' }
-          - { label: 'test', name: 'test', widget: 'string' }
+          - {
+            label: 'Identifier',
+            name: 'identifier',
+            widget: 'hidden',
+            default: 'config',
+          }
+          - {
+              label: 'Header',
+              name: 'header',
+              widget: 'image',
+              default: 'static/img/header-bg.jpg',
+            }

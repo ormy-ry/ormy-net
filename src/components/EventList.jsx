@@ -10,6 +10,7 @@ const EventList = props => {
         title={edge.node.frontmatter.title}
         date={edge.node.frontmatter.date}
         location={edge.node.frontmatter.location}
+        slug={edge.node.fields.slug}
       />
     )
   )
@@ -17,9 +18,9 @@ const EventList = props => {
     <table className="table is-hoverable is-fullwidth">
       <thead>
         <tr>
-          <th>TAPAHTUMA</th>
-          <th>AIKA</th>
-          <th>PAIKKA</th>
+          <th className="is-uppercase">tapahtuma</th>
+          <th className="is-uppercase">aika</th>
+          <th className="is-uppercase">paikka</th>
         </tr>
       </thead>
       <tbody>{eventsList}</tbody>

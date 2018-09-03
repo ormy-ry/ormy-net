@@ -6,14 +6,14 @@ const Navbar = () => (
     <div className="container">
       <div className="navbar-menu is-active">
         <div className="navbar-start">
-          <Link className="navbar-item" exact to="/">
-            ETUSIVU
+          <Link className="navbar-item is-uppercase" exact to="/">
+            etusivu
           </Link>
-          <Link className="navbar-item" to="/event">
-            TAPAHTUMAT
+          <Link className="navbar-item is-uppercase" to="/event">
+            tapahtumat
           </Link>
-          <Link className="navbar-item" to="/info">
-            INFO
+          <Link className="navbar-item is-uppercase" to="/info">
+            info
           </Link>
         </div>
         <div className="navbar-end" />

@@ -24,7 +24,7 @@ export default class IndexPage extends React.Component {
             </h1>
             <HTMLContent content={data.About.edges[0].node.html} />
           </Card>
-          <div className="columns">
+          <div className="columns is-gapless">
             <div className="column">
               <Card>
                 <EventList eventsArr={data.Events} />
@@ -39,6 +39,7 @@ export default class IndexPage extends React.Component {
               </Card>
             </div>
           </div>
+          <Card>jotain</Card>
         </div>
       </div>
     )

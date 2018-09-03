@@ -5,8 +5,14 @@ import Helmet from 'react-helmet'
 import Navbar from '../components/Navbar'
 import './all.sass'
 
+const styles = {
+  gatsby: {
+    height: '100%',
+  },
+}
+
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div style={styles.gatsby}>
     <Helmet title="ÖRMY" />
     <Navbar />
     <div>{children()}</div>

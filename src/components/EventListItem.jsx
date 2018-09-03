@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import { push } from 'gatsby-link'
 
 const trStyle = {
