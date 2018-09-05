@@ -23,7 +23,6 @@ collections:
           label: 'Date',
           name: 'date',
           widget: 'datetime',
-          format: 'DD.MM. YYYY, HH:mm',
         }
       - { label: 'Location', name: 'location', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
