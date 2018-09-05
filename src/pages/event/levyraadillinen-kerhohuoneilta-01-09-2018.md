@@ -1,7 +1,7 @@
 ---
 templateKey: EventPost
 title: Levyraadillinen kerhohuoneilta
-date: '17.02. 2018, 18:00'
+date: '2018-02-17T18:00:00+02:00'
 location: Tiedonkaari 6 kerhis
 ---
 Tiedonkaarella tapahtuu taas! Tällä kertaa kerhoilta, johon on ympätty Levyraati™!!! Tai siis kappaleraati, koska ei meillä ole oikeasti aikaa kuunnella kokonaista levyä. Levyraati™ alkaa klo 18:30, ja päättyy n. klo 20:00, jonka jälkeen ilta jatkuu normaaliin malliin. Jos Levyraadin™ vaatima musiikkiin keskittyminen ja sen arvosteleminen ei nappaa, voit saapua paikalle kahdeksan jälkeen. Mutta itse raadin säännöt:
