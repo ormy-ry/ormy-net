@@ -1,7 +1,7 @@
 ---
 templateKey: EventPost
 title: Rautaesiripun Takaa
-date: '03.02. 2018, 17:00'
+date: '2018-02-03T17:00:00+02:00'
 location: Paalikatu 14
 ---
 Toveri Örmyläinen! Onko kapitalismi vienyt kikkelin hevistäsi? Onko porvaristo riistänyt Saatanan black-metallistasi? Onko länsimainen metallimusiikki käynyt korvillesi liian kaupalliseksi? Tule siis Toppilan kerhoiltamaan kuuntelemaan politbyroon hyväksymää musiikkia Rautaesiripun takaa! Kuuntelemme talkoohengessä musiikkia joko Rautaesiripun takaisista maista, tai sen takaisista tapahtumista kertovaa musiikkia. ÖRMYn kansanpuolueen antamalla poikkeusluvalla saatte myös nauttia omia juomianne, eikä niitä tarvitse kaikkien kesken jakaa. Jätä siis kapitalistimetallin kahleet taaksesi, ja saavu Toppilaan suunnittelemaan vallankumousta! Paikalla myös sauna klo 18:00-19:00, joten pyyhe mukaan.
