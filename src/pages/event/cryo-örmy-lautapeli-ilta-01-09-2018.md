@@ -1,7 +1,7 @@
 ---
 templateKey: EventPost
 title: Cryo & ÖRMY lautapeli-ilta
-date: '05.04. 2018, 17:00'
+date: '2018-04-05T18:00:00+03:00'
 location: Apinatalo
 ---
 Mikä on parasta maailmassa? No hevi ja lautapelit, tiätty! Cryo ja ÖRMY järjestävät jälleen kerran yhteistä iltamaa lautapelien, raskaan musan ja kevyen seurustelun merkeissä. Paikkana toimii jälleen pitkästä aikaa Apinatalo, ajankohtana ensimmäistä kertaa 5.4.2018. Paikalla myös mahdollisesti mahdollisuus hieman pitempikestoiseen roolipeluuseen. Ilmoitahan kiinnostuksesi siihen etukäteen!
