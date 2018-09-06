@@ -1,3 +1,5 @@
+const crypto = require('crypto')
+
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
@@ -55,12 +57,18 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
+  const now = new Date().toISOString()
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
       name: `slug`,
       node,
       value,
+    })
+    createNodeField({
+      node,
+      name: `now`,
+      value: now,
     })
   }
 }

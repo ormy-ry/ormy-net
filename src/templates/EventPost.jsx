@@ -35,7 +35,7 @@ export const EventPostTemplate = ({
           </h1>
           <PostContent content={content} />
           <EventInfo>
-            <span>{`${date} ${location}`}</span>
+            <span>{`${date}, ${location}`}</span>
           </EventInfo>
         </Card>
       </div>
@@ -74,7 +74,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date
+        date(formatString: "DD.MM. YYYY, HH:mm")
         title
         location
       }

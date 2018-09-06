@@ -77,6 +77,7 @@ export const pageQuery = graphql`
     Events: allMarkdownRemark(
       limit: 5
       filter: { frontmatter: { templateKey: { eq: "EventPost" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
         node {
@@ -85,7 +86,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            date
+            date(formatString: "DD.MM. HH:mm")
             location
           }
         }
