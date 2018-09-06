@@ -1,7 +1,7 @@
 ---
 templateKey: EventPost
 title: 'Anti-chirstmas party '
-date: '2017-12-20T17:00:00+02:00'
+date: '2017-12-20 17:00'
 location: Tiedonkaari 6 kerhis
 ---
 Oliko työpaikan pikkujoulut kuolettavan tylsät? Vai eikö ole vielä tullut juhlistettua joulun odotusta? Ei hätää, ÖRMY järjestää koko pikkujoulukauden parhaimmat ja riehakkaimmat pikkujoulujuhlat! Toivotamme teidät kaikki mörököllit tervetulleiksi perjantaina 8.12 kello 18 alkaen Tiedonkaaren kerhikselle ÖRMY:n pikkujoulujuhlaan!
