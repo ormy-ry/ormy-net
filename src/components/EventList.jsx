@@ -7,7 +7,7 @@ const EventList = props => {
     eventsList.push(
       <EventListItem
         title={edge.node.frontmatter.title}
-        date={edge.node.frontmatter.date}
+        date={edge.node.fields.fDate}
         location={edge.node.frontmatter.location}
         slug={edge.node.fields.slug}
       />

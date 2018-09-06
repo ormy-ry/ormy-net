@@ -52,7 +52,7 @@ const EventPost = ({ data }) => {
       contentComponent={HTMLContent}
       helmet={<Helmet title={`ÖRMY | ${post.frontmatter.title}`} />}
       title={post.frontmatter.title}
-      date={post.frontmatter.date}
+      date={post.fields.fDate}
       location={post.frontmatter.location}
     />
   )
@@ -73,8 +73,11 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      fields {
+        fDate
+      }
       frontmatter {
-        date(formatString: "DD.MM. YYYY, HH:mm")
+        date
         title
         location
       }

@@ -1,5 +1,4 @@
-const crypto = require('crypto')
-
+const moment = require('moment')
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
@@ -18,6 +17,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             id
             fields {
               slug
+              fDate
             }
             frontmatter {
               title
@@ -56,8 +56,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
+  const now = moment()
 
-  const now = new Date().toISOString()
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
@@ -65,10 +65,27 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       node,
       value,
     })
-    createNodeField({
-      node,
-      name: `now`,
-      value: now,
-    })
+    if (node.frontmatter.date) {
+      createNodeField({
+        node,
+        name: `fDate`,
+        value: moment(node.frontmatter.date, 'YYYY-MM-DD HH:mm').format(
+          'DD.MM. YYYY, HH:mm'
+        ),
+      })
+      if (moment(node.frontmatter.date) > now) {
+        createNodeField({
+          node,
+          name: `new`,
+          value: true,
+        })
+      } else {
+        createNodeField({
+          node,
+          name: `new`,
+          value: false,
+        })
+      }
+    }
   }
 }
