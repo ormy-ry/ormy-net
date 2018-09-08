@@ -8,6 +8,11 @@ const SponsorImg = styled.img`
   max-height: 10rem;
   width: auto;
   height: auto;
+  filter: brightness(0) invert(1);
+  transition: 0.3s;
+  :hover {
+    filter: none;
+  }
 `
 
 export default props => {
