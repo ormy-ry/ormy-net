@@ -9,7 +9,7 @@ const SponsorImg = styled.img`
   width: auto;
   height: auto;
   filter: brightness(0) invert(1);
-  transition: 0.3s;
+  transition: 0.2s ease;
   :hover {
     filter: none;
   }
