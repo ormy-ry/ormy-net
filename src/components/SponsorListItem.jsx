@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 const SponsorImg = styled.img`
   display: block;
-  max-width: 90%;
+  padding: 2rem;
+  max-width: 100%;
   max-height: 10rem;
   width: auto;
   height: auto;

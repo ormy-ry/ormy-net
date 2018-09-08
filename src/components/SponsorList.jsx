@@ -9,7 +9,11 @@ const SponsorList = props => {
       <SponsorListItem logo={logo.logo} url={logo.url} key={i} />
     )
   )
-  return <div className="columns">{sponsorList}</div>
+  return (
+    <div style={{ marginTop: '5rem' }} className="columns">
+      {sponsorList}
+    </div>
+  )
 }
 
 export default SponsorList

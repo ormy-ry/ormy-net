@@ -26,20 +26,18 @@ export const EventPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <div className="container content">
       {helmet || ''}
-      <div className="container content">
-        <Card>
-          <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-            {title}
-          </h1>
-          <PostContent content={content} />
-          <EventInfo>
-            <span>{`${date}, ${location}`}</span>
-          </EventInfo>
-        </Card>
-      </div>
-    </section>
+      <Card>
+        <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+          {title}
+        </h1>
+        <PostContent content={content} />
+        <EventInfo>
+          <span>{`${date}, ${location}`}</span>
+        </EventInfo>
+      </Card>
+    </div>
   )
 }
 
