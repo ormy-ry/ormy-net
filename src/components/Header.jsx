@@ -8,6 +8,7 @@ const HeaderContainer = styled.div`
   flex-shrink: 0;
   height: 20rem;
   width: 100%;
+  margin-bottom: 2rem;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center top;

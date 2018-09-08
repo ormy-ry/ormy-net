@@ -31,7 +31,7 @@ collections:
   - name: 'site'
     label: 'Site'
     files:
-      - file: 'src/pages/about/index.md'
+      - file: 'src/pages/site/index.md'
         label: 'About'
         name: 'about'
         fields:
@@ -49,7 +49,7 @@ collections:
               widget: 'hidden',
               default: 'about',
             }
-      - file: 'src/pages/about/contact.md'
+      - file: 'src/pages/site/contact.md'
         label: 'Contact'
         name: 'contact'
         fields:
@@ -61,6 +61,16 @@ collections:
               widget: 'hidden',
               default: 'contact',
             }
+      - file: 'src/pages/site/sponsors.md'
+        label: 'Sponsors'
+        name: 'sponsors'
+        fields: 
+          - label: 'Sponsor Logos'
+            name: 'sponsorlogos'
+            widget: 'list' 
+            fields:
+              - { label: 'Logo', name: 'logo', widget: 'image'}
+              - { label: 'URL', name: 'url', widget: 'string'}
   - name: 'config'
     label: 'Config'
     files:

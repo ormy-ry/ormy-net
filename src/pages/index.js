@@ -23,7 +23,7 @@ export default class IndexPage extends React.Component {
         </HeaderContainer>
         <div className="container">
           <Card>
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h1 className="title">
               {data.About.edges[0].node.frontmatter.title}
             </h1>
             <HTMLContent content={data.About.edges[0].node.html} />
@@ -36,9 +36,9 @@ export default class IndexPage extends React.Component {
             </div>
             <div className="column">
               <Card>
-                <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+                <h3 className="title">
                   {data.Contact.edges[0].node.frontmatter.title}
-                </h1>
+                </h3>
                 <HTMLContent content={data.Contact.edges[0].node.html} />
               </Card>
             </div>
