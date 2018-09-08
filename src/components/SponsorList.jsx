@@ -1,6 +1,5 @@
 import React from 'react'
 import SponsorListItem from './SponsorListItem'
-import { node } from 'prop-types'
 
 const SponsorList = props => {
   let sponsorList = []

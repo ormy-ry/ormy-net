@@ -82,7 +82,7 @@ export const pageQuery = graphql`
         frontmatter: { templateKey: { eq: "EventPost" } }
         fields: { new: { eq: true } }
       }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___date], order: ASC }
     ) {
       edges {
         node {
