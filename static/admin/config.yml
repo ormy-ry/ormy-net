@@ -65,6 +65,12 @@ collections:
         label: 'Sponsors'
         name: 'sponsors'
         fields: 
+          - {
+              label: 'Identifier',
+              name: 'identifier',
+              widget: 'hidden',
+              default: 'sponsors',
+            }
           - label: 'Sponsor Logos'
             name: 'sponsorlogos'
             widget: 'list' 

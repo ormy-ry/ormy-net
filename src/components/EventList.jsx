@@ -3,9 +3,10 @@ import EventListItem from './EventListItem'
 
 const EventList = props => {
   let eventsList = []
-  props.eventsArr.edges.forEach(edge =>
+  props.eventsArr.edges.forEach((edge, i) =>
     eventsList.push(
       <EventListItem
+        key={i}
         title={edge.node.frontmatter.title}
         date={edge.node.fields.fDate}
         location={edge.node.frontmatter.location}

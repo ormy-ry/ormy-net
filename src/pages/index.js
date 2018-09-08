@@ -7,10 +7,12 @@ import HeaderContainer from './../components/Header'
 import Logo from './../components/Logo'
 import Card from './../components/Card'
 import EventList from './../components/EventList'
+import SponsorList from '../components/SponsorList'
 
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
+    console.log(data.Sponsors)
     return (
       <div>
         <HeaderContainer
@@ -43,7 +45,7 @@ export default class IndexPage extends React.Component {
               </Card>
             </div>
           </div>
-          <Card>jotain</Card>
+          <SponsorList sponsorsArr={data.Sponsors} />
         </div>
       </div>
     )
@@ -118,6 +120,21 @@ export const pageQuery = graphql`
           html
           frontmatter {
             header
+          }
+        }
+      }
+    }
+    Sponsors: allMarkdownRemark(
+      limit: 1
+      filter: { frontmatter: { identifier: { eq: "sponsors" } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            sponsorlogos {
+              logo
+              url
+            }
           }
         }
       }
