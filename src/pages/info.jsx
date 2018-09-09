@@ -15,11 +15,10 @@ const BoardPic = styled.img`
 export default class InfoPage extends React.Component {
   render() {
     const { data } = this.props
-    console.log(data.Board.edges[0].node.html)
     return (
       <div
         className="container"
-        style={{ marginTop: '2rem', marginBottom: '10rem' }}
+        style={{ paddingTop: '2rem', paddingBottom: '10rem' }}
       >
         <div className="tile is-ancestor is-vertical">
           <div className="tile is-parent is-vertical">

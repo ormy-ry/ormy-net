@@ -9,7 +9,7 @@ const SponsorList = props => {
     )
   )
   return (
-    <div style={{ marginTop: '5rem' }} className="columns">
+    <div style={{ paddingTop: '5rem' }} className="columns">
       {sponsorList}
     </div>
   )

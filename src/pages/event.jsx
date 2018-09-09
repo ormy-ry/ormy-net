@@ -35,7 +35,7 @@ export default class EventsPage extends React.Component {
     return (
       <div
         className="container"
-        style={{ marginTop: '2rem', marginBottom: '10rem' }}
+        style={{ paddingTop: '2rem', paddingBottom: '10rem' }}
       >
         <div className="tile is-ancestor is-vertical">
           <div className="tile is-parent is-vertical">{newArr}</div>
