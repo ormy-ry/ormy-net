@@ -14,6 +14,18 @@ const EventList = props => {
       />
     )
   )
+  if (eventsList.length === 0) {
+    eventsList.push(
+      <tr>
+        <td colSpan="3">
+          Ei tulevia tapahtumia listattuna. Örmyn hallitus suunnittelee ja
+          julkaisee säännöllisesti uutisia tapahtumia näillä sivuilla sekä
+          Facebook -ryhmässä. Katso menneet tapahtumat{' '}
+          <a href="/event">tapahtumasivulta</a>
+        </td>
+      </tr>
+    )
+  }
   return (
     <table className="table is-hoverable is-fullwidth">
       <thead>

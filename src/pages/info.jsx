@@ -17,7 +17,10 @@ export default class InfoPage extends React.Component {
     const { data } = this.props
     console.log(data.Board.edges[0].node.html)
     return (
-      <div className="container">
+      <div
+        className="container"
+        style={{ marginTop: '2rem', marginBottom: '10rem' }}
+      >
         <Card>
           <h3 className="title">
             {data.Membership.edges[0].node.frontmatter.title}
@@ -47,7 +50,12 @@ export default class InfoPage extends React.Component {
             </Card>
           </div>
           <div className="column">
-            <Card>a</Card>
+            <Card>
+              <h3 className="title">
+                {data.Documents.edges[0].node.frontmatter.title}
+              </h3>
+              <HTMLContent content={data.Documents.edges[0].node.html} />
+            </Card>
           </div>
         </div>
       </div>
@@ -97,6 +105,19 @@ export const pageQuery = graphql`
     Contact: allMarkdownRemark(
       limit: 1
       filter: { frontmatter: { identifier: { eq: "contact" } } }
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+    Documents: allMarkdownRemark(
+      limit: 1
+      filter: { frontmatter: { identifier: { eq: "documents" } } }
     ) {
       edges {
         node {

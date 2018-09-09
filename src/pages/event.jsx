@@ -37,7 +37,10 @@ export default class EventsPage extends React.Component {
       )
     )
     return (
-      <div className="container">
+      <div
+        className="container"
+        style={{ marginTop: '2rem', marginBottom: '10rem' }}
+      >
         {newArr}
         <Card>
           <h3 className="title">Menneet tapahtumat</h3>
