@@ -31,7 +31,6 @@ export default class IndexPage extends React.Component {
         <div className="container">
           <Card>
             <h1 className="title">
-              <FontAwesomeIcon icon={['fab', 'facebook']} />
               {data.About.edges[0].node.frontmatter.title}
             </h1>
             <HTMLContent content={data.About.edges[0].node.html} />

@@ -37,6 +37,19 @@ export default class InfoPage extends React.Component {
             </div>
           </div>
         </Card>
+        <div className="columns is-gapless">
+          <div className="column">
+            <Card>
+              <h3 className="title">
+                {data.Contact.edges[0].node.frontmatter.title}
+              </h3>
+              <HTMLContent content={data.Contact.edges[0].node.html} />
+            </Card>
+          </div>
+          <div className="column">
+            <Card>a</Card>
+          </div>
+        </div>
       </div>
     )
   }
@@ -77,6 +90,19 @@ export const pageQuery = graphql`
             title
             picture
             year
+          }
+        }
+      }
+    }
+    Contact: allMarkdownRemark(
+      limit: 1
+      filter: { frontmatter: { identifier: { eq: "contact" } } }
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            title
           }
         }
       }
