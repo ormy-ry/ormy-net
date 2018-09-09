@@ -21,19 +21,15 @@ export default class EventsPage extends React.Component {
     let newArr = []
     data.New.edges.forEach((edge, i) =>
       newArr.push(
-        <div className="container content" key={i}>
-          <Card>
-            <Link to={edge.node.fields.slug}>
-              <h2 className="title">{edge.node.frontmatter.title}</h2>
-            </Link>
-            <HTMLContent content={edge.node.html} />
-            <EventInfo>
-              <span>{`${edge.node.fields.fDate}, ${
-                edge.node.frontmatter.location
-              }`}</span>
-            </EventInfo>
-          </Card>
-        </div>
+        <Card key={i} className="tile is-child">
+          <h2 className="title">{edge.node.frontmatter.title}</h2>
+          <HTMLContent content={edge.node.html} />
+          <EventInfo>
+            <span>{`${edge.node.fields.fDate}, ${
+              edge.node.frontmatter.location
+            }`}</span>
+          </EventInfo>
+        </Card>
       )
     )
     return (
@@ -41,11 +37,15 @@ export default class EventsPage extends React.Component {
         className="container"
         style={{ marginTop: '2rem', marginBottom: '10rem' }}
       >
-        {newArr}
-        <Card>
-          <h3 className="title">Menneet tapahtumat</h3>
-          <EventList eventsArr={data.Old} />
-        </Card>
+        <div className="tile is-ancestor is-vertical">
+          <div className="tile is-parent is-vertical">{newArr}</div>
+          <div className="tile is-parent">
+            <Card className="tile is-child">
+              <h3 className="title">Menneet tapahtumat</h3>
+              <EventList eventsArr={data.Old} />
+            </Card>
+          </div>
+        </div>
       </div>
     )
   }

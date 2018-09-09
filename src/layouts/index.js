@@ -13,7 +13,16 @@ const styles = {
 
 const TemplateWrapper = ({ children }) => (
   <div style={styles.gatsby}>
-    <Helmet title="ÖRMY" />
+    <Helmet
+      title="ÖRMY"
+      meta={[
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1.0, shrink-to-fit=no',
+        },
+        { name: 'theme-color', content: '#181818' },
+      ]}
+    />
     <Navbar />
     <div>{children()}</div>
   </div>

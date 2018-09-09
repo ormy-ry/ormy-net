@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import img from './../../static/img/header-bg.jpg'
 
 const HeaderContainer = styled.div`
   background-color: #2e2e2e;

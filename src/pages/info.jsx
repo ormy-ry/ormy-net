@@ -21,41 +21,48 @@ export default class InfoPage extends React.Component {
         className="container"
         style={{ marginTop: '2rem', marginBottom: '10rem' }}
       >
-        <Card>
-          <h3 className="title">
-            {data.Membership.edges[0].node.frontmatter.title}
-          </h3>
-          <HTMLContent content={data.Membership.edges[0].node.html} />
-        </Card>
-        <Card>
-          <h3 className="title">
-            {data.Board.edges[0].node.frontmatter.title}
-          </h3>
-          <div className="columns">
-            <div className="column">
-              <HTMLContent content={data.Board.edges[0].node.html} />
-            </div>
-            <div className="column">
-              <BoardPic src={data.Board.edges[0].node.frontmatter.picture} />
-            </div>
-          </div>
-        </Card>
-        <div className="columns is-gapless">
-          <div className="column">
-            <Card>
+        <div className="tile is-ancestor is-vertical">
+          <div className="tile is-parent is-vertical">
+            <Card className="tile is-child">
               <h3 className="title">
-                {data.Contact.edges[0].node.frontmatter.title}
+                {data.Membership.edges[0].node.frontmatter.title}
               </h3>
-              <HTMLContent content={data.Contact.edges[0].node.html} />
+              <HTMLContent content={data.Membership.edges[0].node.html} />
+            </Card>
+            <Card className="tile is-child">
+              <div className="columns">
+                <div className="column">
+                  <h3 className="title">
+                    {data.Board.edges[0].node.frontmatter.title}
+                  </h3>
+                  <HTMLContent content={data.Board.edges[0].node.html} />
+                </div>
+                <div className="column">
+                  <BoardPic
+                    src={data.Board.edges[0].node.frontmatter.picture}
+                  />
+                </div>
+              </div>
             </Card>
           </div>
-          <div className="column">
-            <Card>
-              <h3 className="title">
-                {data.Documents.edges[0].node.frontmatter.title}
-              </h3>
-              <HTMLContent content={data.Documents.edges[0].node.html} />
-            </Card>
+          <div className="tile">
+            <div className="tile is-parent">
+              <Card className="tile is-child">
+                <h3 className="title">
+                  {data.Contact.edges[0].node.frontmatter.title}
+                </h3>
+                <HTMLContent content={data.Contact.edges[0].node.html} />
+              </Card>
+            </div>
+
+            <div className="tile is-parent">
+              <Card className="tile is-child">
+                <h3 className="title">
+                  {data.Documents.edges[0].node.frontmatter.title}
+                </h3>
+                <HTMLContent content={data.Documents.edges[0].node.html} />
+              </Card>
+            </div>
           </div>
         </div>
       </div>

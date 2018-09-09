@@ -1,11 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faLink } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import Content, { HTMLContent } from '../components/Content'
 import HeaderContainer from './../components/Header'
 import Logo from './../components/Logo'
@@ -13,7 +8,6 @@ import Card from './../components/Card'
 import EventList from './../components/EventList'
 import SponsorList from '../components/SponsorList'
 
-library.add(fab, faLink)
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
@@ -29,28 +23,33 @@ export default class IndexPage extends React.Component {
           <Logo />
         </HeaderContainer>
         <div className="container">
-          <Card>
-            <h1 className="title">
-              {data.About.edges[0].node.frontmatter.title}
-            </h1>
-            <HTMLContent content={data.About.edges[0].node.html} />
-          </Card>
-          <div className="columns is-gapless">
-            <div className="column">
-              <Card>
-                <EventList eventsArr={data.Events} />
+          <div className="tile is-ancestor is-vertical">
+            <div className="tile is-parent">
+              <Card className="tile is-child">
+                <h1 className="title">
+                  {data.About.edges[0].node.frontmatter.title}
+                </h1>
+                <HTMLContent content={data.About.edges[0].node.html} />
               </Card>
             </div>
-            <div className="column">
-              <Card>
-                <h3 className="title">
-                  {data.Contact.edges[0].node.frontmatter.title}
-                </h3>
-                <HTMLContent content={data.Contact.edges[0].node.html} />
-              </Card>
+
+            <div className="tile">
+              <div className="tile is-parent">
+                <Card className="tile is-child">
+                  <EventList eventsArr={data.Events} />
+                </Card>
+              </div>
+              <div className="tile is-parent">
+                <Card className="tile is-child">
+                  <h3 className="title">
+                    {data.Contact.edges[0].node.frontmatter.title}
+                  </h3>
+                  <HTMLContent content={data.Contact.edges[0].node.html} />
+                </Card>
+              </div>
             </div>
+            <SponsorList sponsorsArr={data.Sponsors} />
           </div>
-          <SponsorList sponsorsArr={data.Sponsors} />
         </div>
       </div>
     )
