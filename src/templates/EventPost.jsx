@@ -25,7 +25,7 @@ export const EventPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <div className="container content">
+    <div className="container" style={{ paddingTop: '2rem' }}>
       {helmet || ''}
       <Card>
         <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
