@@ -3,11 +3,19 @@ import PropTypes from 'prop-types'
 
 import Card from '../components/Card'
 import Content, { HTMLContent } from '../components/Content'
+import styled from 'styled-components'
+
+const BoardPic = styled.img`
+  max-height: 20rem;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+`
 
 export default class InfoPage extends React.Component {
   render() {
     const { data } = this.props
-    console.log(data)
+    console.log(data.Board.edges[0].node.html)
     return (
       <div className="container">
         <Card>
@@ -20,6 +28,14 @@ export default class InfoPage extends React.Component {
           <h3 className="title">
             {data.Board.edges[0].node.frontmatter.title}
           </h3>
+          <div className="columns">
+            <div className="column">
+              <HTMLContent content={data.Board.edges[0].node.html} />
+            </div>
+            <div className="column">
+              <BoardPic src={data.Board.edges[0].node.frontmatter.picture} />
+            </div>
+          </div>
         </Card>
       </div>
     )
@@ -58,6 +74,7 @@ export const pageQuery = graphql`
         node {
           html
           frontmatter {
+            title
             picture
             year
           }
