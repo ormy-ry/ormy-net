@@ -2,7 +2,6 @@
 title: Jäsenyys
 identifier: membership
 ---
-
 Yhdistyksen varsinaiseksi jäseneksi voi liittyä Oulun yliopiston nykyinen tai entinen opiskelija tai henkilökunnan jäsen. Varsinainen jäsen voi toimia ÖRMY ry:n hallituksessa, ja hänellä on äänioikeus yhdistyksen kokouksissa. Jäsenyydellä saa lukuvuoden mittaan erinäisiä etuuksia, muun muassa alennuksia bändi-iltojen lipuista. Tapahtumiin voi kuitenkin osallistua myös ilman jäsenyyttä.
 
 Yhdistyksen kannatusjäseneksi voidaan hyväksyä yhdistyksen toiminnasta kiinnostunut henkilö, jota ei voida hyväksyä varsinaiseksi jäseneksi, tai yhdistyksen toimintaa tukeva yksityishenkilö tai oikeustoimikelpoinen yhteisö. Kannatusjäsenille kuuluvat samat edut ja velvollisuudet kuin varsinaisille jäsenille, mutta heillä ei ole äänioikeutta yhdistyksen kokouksissa, eikä heitä voi valita yhdistyksen hallitukseen.
