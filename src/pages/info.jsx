@@ -6,13 +6,21 @@ import Content, { HTMLContent } from '../components/Content'
 
 export default class InfoPage extends React.Component {
   render() {
-    /*
     const { data } = this.props
-    console.log(data)*/
+    console.log(data)
     return (
       <div className="container">
-        <Card />
-        <Card />
+        <Card>
+          <h3 className="title">
+            {data.Membership.edges[0].node.frontmatter.title}
+          </h3>
+          <HTMLContent content={data.Membership.edges[0].node.html} />
+        </Card>
+        <Card>
+          <h3 className="title">
+            {data.Board.edges[0].node.frontmatter.title}
+          </h3>
+        </Card>
       </div>
     )
   }
@@ -25,7 +33,7 @@ InfoPage.propTypes = {
     }),
   }),
 }
-/*
+
 export const pageQuery = graphql`
   query InfoQuery {
     Membership: allMarkdownRemark(
@@ -58,4 +66,3 @@ export const pageQuery = graphql`
     }
   }
 `
-*/

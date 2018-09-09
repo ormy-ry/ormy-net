@@ -41,7 +41,7 @@ collections:
         default: 'board',
       }
       - { label: 'Year', name: 'year', widget: 'date', format: 'YYYY' }
-      - { label: 'Description', name: 'description', widget: 'markdown'}
+      - { label: 'Body', name: 'body', widget: 'markdown'}
       - { label: 'Picture', name: 'picture', widget: 'image'}
   - name: 'site'
     label: 'Site'
