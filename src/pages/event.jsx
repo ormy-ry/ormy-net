@@ -4,6 +4,7 @@ import Card from '../components/Card'
 import EventList from '../components/EventList'
 import Content, { HTMLContent } from '../components/Content'
 
+import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 const EventInfo = styled.div`
@@ -22,7 +23,9 @@ export default class EventsPage extends React.Component {
       newArr.push(
         <div className="container content" key={i}>
           <Card>
-            <h2 className="title">{edge.node.frontmatter.title}</h2>
+            <Link to={edge.node.fields.slug}>
+              <h2 className="title">{edge.node.frontmatter.title}</h2>
+            </Link>
             <HTMLContent content={edge.node.html} />
             <EventInfo>
               <span>{`${edge.node.fields.fDate}, ${

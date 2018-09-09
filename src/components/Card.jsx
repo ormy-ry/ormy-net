@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 const Card = styled.div`
   grid-area: content;
-  width: calc(100% - 2rem);
+  width: calc(100% - 1rem);
   min-height: 10rem;
   padding: 1rem;
-  margin: 1rem 1rem;
+  margin: 0.5rem 0.5rem;
   background: #181818;
   border-radius: 2px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);

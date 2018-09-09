@@ -27,7 +27,21 @@ collections:
         }
       - { label: 'Location', name: 'location', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-
+  - name: 'board'
+    label: 'Board'
+    folder: 'src/pages/board'
+    create: true
+    slug: '{{slug}}-{{year}}'
+    fields:
+      - {
+        label: 'Identifier',
+        name: 'identifier',
+        widget: 'hidden',
+        default: 'board',
+      }
+      - { label: 'Year', name: 'year', widget: 'date', format: 'YYYY' }
+      - { label: 'Description', name: 'description', widget: 'markdown'}
+      - { label: 'Picture', name: 'picture', widget: 'image'}
   - name: 'site'
     label: 'Site'
     files:
@@ -60,6 +74,18 @@ collections:
               name: 'identifier',
               widget: 'hidden',
               default: 'contact',
+            }
+      - file: 'src/pages/site/membership.md'
+        label: 'Membership'
+        name: 'membership'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - {
+              label: 'Identifier',
+              name: 'identifier',
+              widget: 'hidden',
+              default: 'membership',
             }
       - file: 'src/pages/site/sponsors.md'
         label: 'Sponsors'

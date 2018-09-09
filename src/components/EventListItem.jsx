@@ -1,5 +1,6 @@
 import React from 'react'
 import { push } from 'gatsby-link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const trStyle = {
   cursor: 'pointer',
