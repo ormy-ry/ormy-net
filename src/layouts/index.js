@@ -4,12 +4,23 @@ import Helmet from 'react-helmet'
 
 import Navbar from '../components/Navbar'
 import './all.sass'
+import styled from 'styled-components'
 
 const styles = {
   gatsby: {
     height: '100%',
   },
 }
+
+const Credit = styled.span`
+  margin-top: auto;
+  padding: 0.4rem;
+  color: gray;
+  transition: 0.5s ease;
+  :hover {
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+  }
+`
 
 const TemplateWrapper = ({ children }) => (
   <div style={styles.gatsby}>
@@ -25,6 +36,7 @@ const TemplateWrapper = ({ children }) => (
     />
     <Navbar />
     <div>{children()}</div>
+    <Credit className="is-pulled-right">Panu Linnala 2018</Credit>
   </div>
 )
 
