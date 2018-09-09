@@ -33,6 +33,7 @@ collections:
     create: true
     slug: '{{slug}}-{{year}}'
     fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
       - {
         label: 'Identifier',
         name: 'identifier',
