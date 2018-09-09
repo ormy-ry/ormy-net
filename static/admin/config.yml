@@ -76,6 +76,18 @@ collections:
               widget: 'hidden',
               default: 'contact',
             }
+      - file: 'src/pages/site/documents.md'
+        label: 'Documents'
+        name: 'documents'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - {
+              label: 'Identifier',
+              name: 'identifier',
+              widget: 'hidden',
+              default: 'documents',
+            }
       - file: 'src/pages/site/membership.md'
         label: 'Membership'
         name: 'membership'
