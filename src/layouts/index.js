@@ -1,10 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import Navbar from '../components/Navbar'
 import './all.sass'
 import styled from 'styled-components'
+
+library.add(fab, faEnvelope)
 
 const styles = {
   gatsby: {
