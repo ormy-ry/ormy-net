@@ -10,7 +10,6 @@ import './all.sass'
 import styled from 'styled-components'
 
 library.add(fab, faEnvelope)
-config.autoAddCss = false
 
 const styles = {
   gatsby: {
