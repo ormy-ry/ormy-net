@@ -29,7 +29,7 @@ export default () => {
               method="post"
               data-netlify="true"
               netlify="true"
-              action="#"
+              action="/"
               netlify
             >
               <div className="field">
