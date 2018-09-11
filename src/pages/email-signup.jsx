@@ -20,6 +20,7 @@ export default () => {
               name="signup"
               method="post"
               data-netlify="true"
+              netlify="true"
               action="#"
               netlify
             >
@@ -54,6 +55,9 @@ export default () => {
                     sähköpostiosoitteeni.
                   </label>
                 </div>
+              </div>
+              <div className="field">
+                <div data-netlify-recaptcha />
               </div>
               <div className="field is-grouped">
                 <div className="control">
