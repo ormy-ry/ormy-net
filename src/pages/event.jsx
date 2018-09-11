@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Card from '../components/Card'
 import EventList from '../components/EventList'
 import Content, { HTMLContent } from '../components/Content'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Link from 'gatsby-link'
 import styled from 'styled-components'
@@ -22,7 +23,16 @@ export default class EventsPage extends React.Component {
     data.New.edges.forEach((edge, i) =>
       newArr.push(
         <Card key={i} className="tile is-child">
-          <h2 className="title">{edge.node.frontmatter.title}</h2>
+          <h2 className="title">
+            {edge.node.frontmatter.title}
+            <Link to={edge.node.fields.slug}>
+              {' '}
+              <FontAwesomeIcon
+                style={{ margin: '0.2rem', height: '1.2rem' }}
+                icon="link"
+              />
+            </Link>
+          </h2>
           <HTMLContent content={edge.node.html} />
           <EventInfo>
             <span>{`${edge.node.fields.fDate}, ${
