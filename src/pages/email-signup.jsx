@@ -7,7 +7,15 @@ export default () => {
       className="container"
       style={{ paddingTop: '2rem', paddingBottom: '10rem' }}
     >
-      <form name="signup" netlify hidden>
+      <form
+        name="signup"
+        method="post"
+        data-netlify="true"
+        netlify="true"
+        action="#"
+        netlify
+        hidden
+      >
         <input type="text" name="Name" />
         <input type="email" name="Email" />
         <input type="checkbox" name="Agreement" />
