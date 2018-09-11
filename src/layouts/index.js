@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faLink } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faLink, faUser } from '@fortawesome/free-solid-svg-icons'
 
 import Navbar from '../components/Navbar'
 import './all.sass'
 import styled from 'styled-components'
 
-library.add(fab, faEnvelope, faLink)
+library.add(fab, faEnvelope, faLink, faUser)
 
 const styles = {
   gatsby: {
@@ -18,6 +18,9 @@ const styles = {
 }
 
 const Credit = styled.span`
+  position: absolute !important;
+  right: 8px;
+  bottom: 8px;
   margin-top: auto;
   padding: 0.4rem;
   color: gray;
