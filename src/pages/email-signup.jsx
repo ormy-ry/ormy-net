@@ -7,31 +7,11 @@ export default () => {
       className="container"
       style={{ paddingTop: '2rem', paddingBottom: '10rem' }}
     >
-      <form
-        name="signup"
-        method="post"
-        data-netlify="true"
-        netlify="true"
-        action="#"
-        netlify
-        hidden
-      >
-        <input type="text" name="Name" />
-        <input type="email" name="Email" />
-        <input type="checkbox" name="Agreement" />
-      </form>
       <div className="columns">
         <div className="column" />
         <div className="column">
           <div className="section">
-            <form
-              name="signup"
-              method="post"
-              data-netlify="true"
-              netlify="true"
-              action="/"
-              netlify
-            >
+            <form name="signup" method="post" data-netlify="true">
               <div className="field">
                 <label className="has-text-grey-light label">Nimi</label>
                 <div className="control has-icons-left has-icons-right">

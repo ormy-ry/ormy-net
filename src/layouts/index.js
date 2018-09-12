@@ -16,12 +16,11 @@ const styles = {
     height: '100%',
   },
 }
-
+/*
 const Credit = styled.span`
   position: absolute !important;
-  right: 8px;
-  bottom: 8px;
-  margin-top: auto;
+  right: 8px !important;
+  bottom: 8px !important;
   padding: 0.4rem;
   color: gray;
   transition: 0.5s ease;
@@ -29,7 +28,7 @@ const Credit = styled.span`
     filter: drop-shadow(16px 16px 20px red) invert(75%);
   }
 `
-
+*/
 const TemplateWrapper = ({ children }) => (
   <div style={styles.gatsby}>
     <Helmet
@@ -44,7 +43,6 @@ const TemplateWrapper = ({ children }) => (
     />
     <Navbar />
     <div>{children()}</div>
-    <Credit className="is-pulled-right">Panu Linnala 2018</Credit>
   </div>
 )
 
