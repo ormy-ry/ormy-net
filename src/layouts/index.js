@@ -19,9 +19,8 @@ const styles = {
 
 const Credit = styled.span`
   position: absolute !important;
-  right: 8px;
-  bottom: 8px;
-  margin-top: auto;
+  right: 8px !important;
+  bottom: 8px !important;
   padding: 0.4rem;
   color: gray;
   transition: 0.5s ease;
