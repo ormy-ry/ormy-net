@@ -18,7 +18,7 @@ export default class BoardsPage extends React.Component {
     data.Board.edges.forEach((edge, i) =>
       boardArr.push(
       <div className="tile is-parent">
-        <Card className="tile is-child">
+        <Card className="tile is-child" style={{width: "100%"}}>
           <div className="columns">
             <div className="column">
               <h3 className="title">
