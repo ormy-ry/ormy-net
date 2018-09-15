@@ -18,18 +18,16 @@ export default class BoardsPage extends React.Component {
     data.Board.edges.forEach((edge, i) =>
       boardArr.push(
         <Card className="tile is-child">
-          <div className="columns">
-            <div className="column">
-              <h3 className="title">
-                {data.Board.edges[i].node.frontmatter.title}
-                </h3>
-                <HTMLContent content={data.Board.edges[i].node.html} />
-            </div>
-              <div className="column">
-                <BoardPic
-                  src={data.Board.edges[i].node.frontmatter.picture}
-                />
-            </div>
+          <div className="column">
+            <h3 className="title">
+              {data.Board.edges[i].node.frontmatter.title}
+            </h3>
+            <HTMLContent content={data.Board.edges[i].node.html} />
+          </div>
+          <div className="column">
+            <BoardPic
+              src={data.Board.edges[i].node.frontmatter.picture}
+            />
           </div>
         </Card>
       )
@@ -39,8 +37,8 @@ export default class BoardsPage extends React.Component {
         className="container"
         style={{ paddingTop: '2rem', paddingBottom: '10rem' }}
       >
-        <div className="columns">
-          <div className="column">
+        <div className="tile is-ancestor">
+          <div className="tile is parent is-vertical">
             {boardArr}
           </div>
         </div>
