@@ -44,6 +44,7 @@ export default class InfoPage extends React.Component {
                 </div>
               </div>
               <div className="level">
+                <div className="level-left"/>
                 <div className="level-right is-pulled-right"><Link className="has-text-weight-bold" to="/board">Edellisvuosien hallitukset</Link></div>
               </div>
             </Card>

@@ -17,7 +17,8 @@ export default class BoardsPage extends React.Component {
     let boardArr = []
     data.Board.edges.forEach((edge, i) =>
       boardArr.push(
-        <Card className="tile is-child">
+      <div className="tile is-parent">
+        <Card className="tile is-parent">
           <div className="columns">
             <div className="column">
               <h3 className="title">
@@ -32,6 +33,7 @@ export default class BoardsPage extends React.Component {
             </div>
           </div>
         </Card>
+        </div>
       )
     )
     return (
@@ -39,10 +41,8 @@ export default class BoardsPage extends React.Component {
         className="container"
         style={{ paddingTop: '2rem', paddingBottom: '10rem' }}
       >
-        <div className="tile is-ancestor">
-          <div className="tile is parent is-vertical">
-            {boardArr}
-          </div>
+        <div className="tile is-ancestor is-vertical">
+          {boardArr}
         </div>
       </div>
     )
