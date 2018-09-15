@@ -2,6 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Card from '../components/Card'
 import Content, { HTMLContent } from '../components/Content'
+import styled from 'styled-components'
+
+const BoardPic = styled.img`
+  max-height: 20rem;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+`
 
 export default class BoardsPage extends React.Component {
   render() {
