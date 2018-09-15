@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Link from 'gatsby-link'
 
 import Card from '../components/Card'
 import Content, { HTMLContent } from '../components/Content'
@@ -41,6 +42,9 @@ export default class InfoPage extends React.Component {
                     src={data.Board.edges[0].node.frontmatter.picture}
                   />
                 </div>
+              </div>
+              <div className="level">
+                <div className="level-right is-pulled-right"><Link className="has-text-weight-bold" to="/board">Edellisvuosien hallitukset</Link></div>
               </div>
             </Card>
           </div>
