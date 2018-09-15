@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Card from '../components/Card'
 import Content, { HTMLContent } from '../components/Content'
 
-export default class EventsPage extends React.Component {
+export default class BoardsPage extends React.Component {
   render() {
     const { data } = this.props
     let boardArr = []
