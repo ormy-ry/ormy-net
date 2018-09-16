@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Card from '../components/Card'
 import Content, { HTMLContent } from '../components/Content'
@@ -45,7 +46,7 @@ export default class InfoPage extends React.Component {
               </div>
               <div className="level">
                 <div className="level-left"/>
-                <div className="level-right is-pulled-right"><Link className="has-text-weight-bold" to="/board">Edellisvuosien hallitukset</Link></div>
+                <div className="level-right is-pulled-right"><Link className="has-text-weight-bold" to="/board">Edellisvuosien hallitukset <FontAwesomeIcon icon="chevroncircleright"/></Link></div>
               </div>
             </Card>
           </div>
