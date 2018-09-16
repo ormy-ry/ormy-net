@@ -17,10 +17,12 @@ const SponsorImg = styled.img`
 
 export default props => {
   return (
-    <div className="column is-4">
-      <a href={props.url}>
-        <SponsorImg src={props.logo} />
-      </a>
+    <div className="tile is-parent">
+      <div className="tile is child">
+        <a href={props.url}>
+          <SponsorImg src={props.logo} />
+        </a>
+      </div>
     </div>
   )
 }
