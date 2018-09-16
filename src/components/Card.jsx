@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 const Card = styled.div`
+  width: 100%;
+  height: 100%;
   display: inline-block;
   background: #181818;
   padding: 1rem;
