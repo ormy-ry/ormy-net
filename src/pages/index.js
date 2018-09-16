@@ -36,7 +36,7 @@ export default class IndexPage extends React.Component {
             <div className="tile">
               <div className="tile is-parent">
                 <Card className="tile is-child">
-                  <h3>Tulevia tapahtumia</h3>
+                  <h3 className="title">Tulevia tapahtumia</h3>
                   <EventList eventsArr={data.Events} />
                 </Card>
               </div>
