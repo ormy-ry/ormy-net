@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Card from '../components/Card'
-import EventList from '../components/EventList'
-import Content, { HTMLContent } from '../components/Content'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from "react";
+import PropTypes from "prop-types";
+import Card from "../components/Card";
+import EventList from "../components/EventList";
+import Content, { HTMLContent } from "../components/Content";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Link from 'gatsby-link'
-import styled from 'styled-components'
+import Link from "gatsby-link";
+import styled from "styled-components";
 
 const EventInfo = styled.div`
   display: block;
@@ -14,41 +14,43 @@ const EventInfo = styled.div`
   font-size: 1.1rem;
   font-weight: bold;
   color: #b3b3b3;
-`
+`;
 
 export default class EventsPage extends React.Component {
   render() {
-    const { data } = this.props
-    let newArr = []
-    data.New.edges.forEach((edge, i) =>
-      newArr.push(
-        <Card key={i} className="tile is-child">
-          <h2 className="title">
-            {edge.node.frontmatter.title}
-            <Link to={edge.node.fields.slug}>
-              {' '}
-              <FontAwesomeIcon
-                style={{ margin: '0.2rem', height: '1.2rem' }}
-                icon="link"
-              />
-            </Link>
-          </h2>
-          <HTMLContent content={edge.node.html} />
-          <EventInfo>
-            <span>{`${edge.node.fields.fDate}, ${
-              edge.node.frontmatter.location
-            }`}</span>
-          </EventInfo>
-        </Card>
-      )
-    )
+    const { data } = this.props;
+    let newArr = [];
+    if (data.New) {
+      data.New.edges.forEach((edge, i) =>
+        newArr.push(
+          <Card key={i} className="tile is-child">
+            <h2 className="title">
+              {edge.node.frontmatter.title}
+              <Link to={edge.node.fields.slug}>
+                {" "}
+                <FontAwesomeIcon
+                  style={{ margin: "0.2rem", height: "1.2rem" }}
+                  icon="link"
+                />
+              </Link>
+            </h2>
+            <HTMLContent content={edge.node.html} />
+            <EventInfo>
+              <span>{`${edge.node.fields.fDate}, ${
+                edge.node.frontmatter.location
+              }`}</span>
+            </EventInfo>
+          </Card>
+        )
+      );
+    }
     return (
       <div
         className="container"
-        style={{ paddingTop: '2rem', paddingBottom: '10rem' }}
+        style={{ paddingTop: "2rem", paddingBottom: "10rem" }}
       >
         <div className="tile is-ancestor is-vertical">
-          <div className="tile is-parent is-vertical">{newArr}</div>
+          {newArr && <div className="tile is-parent is-vertical">{newArr}</div>}
           <div className="tile is-parent">
             <Card className="tile is-child">
               <h3 className="title">Menneet tapahtumat</h3>
@@ -57,17 +59,17 @@ export default class EventsPage extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
 EventsPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-}
+      edges: PropTypes.array
+    })
+  })
+};
 
 export const pageQuery = graphql`
   query EventsQuery {
@@ -115,4 +117,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
