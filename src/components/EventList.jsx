@@ -1,30 +1,32 @@
-import React from 'react'
-import EventListItem from './EventListItem'
+import React from "react";
+import EventListItem from "./EventListItem";
 
 const EventList = props => {
-  let eventsList = []
-  props.eventsArr.edges.forEach((edge, i) =>
-    eventsList.push(
-      <EventListItem
-        key={i}
-        title={edge.node.frontmatter.title}
-        date={edge.node.fields.fDate}
-        location={edge.node.frontmatter.location}
-        slug={edge.node.fields.slug}
-      />
-    )
-  )
+  let eventsList = [];
+  if (props.eventsArr) {
+    props.eventsArr.edges.forEach((edge, i) =>
+      eventsList.push(
+        <EventListItem
+          key={i}
+          title={edge.node.frontmatter.title}
+          date={edge.node.fields.fDate}
+          location={edge.node.frontmatter.location}
+          slug={edge.node.fields.slug}
+        />
+      )
+    );
+  }
   if (eventsList.length === 0) {
     eventsList.push(
       <tr>
         <td colSpan="3">
           Ei tulevia tapahtumia listattuna. Örmyn hallitus suunnittelee ja
           julkaisee säännöllisesti uutisia tapahtumia näillä sivuilla sekä
-          Facebook -ryhmässä. Katso menneet tapahtumat{' '}
+          Facebook -ryhmässä. Katso menneet tapahtumat{" "}
           <a href="/event">tapahtumasivulta</a>
         </td>
       </tr>
-    )
+    );
   }
   return (
     <table className="table is-hoverable is-fullwidth">
@@ -37,7 +39,7 @@ const EventList = props => {
       </thead>
       <tbody>{eventsList}</tbody>
     </table>
-  )
-}
+  );
+};
 
-export default EventList
+export default EventList;
