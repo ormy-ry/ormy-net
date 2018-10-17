@@ -11,7 +11,7 @@ import SponsorList from '../components/SponsorList'
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
-    console.log(data.Sponsors)
+    console.log(skeleton)
     return (
       <div>
         <HeaderContainer
@@ -64,6 +64,23 @@ IndexPage.propTypes = {
     }),
   }),
 }
+
+const skeleton = `
+▒▒░░░░░░░░░░▄▐░░░░ 
+▒░░░░░░▄▄▄░░▄██▄░░░ 
+░░░░░░▐▀█▀▌░░░░▀█▄ ░ 
+░░░░░░▐█▄█▌░░░░░░▀█▄ 
+░░░░░░░▀▄▀░░░▄▄▄▄▄▀▀ 
+░░░░░▄▄▄██▀▀▀▀░░░░░ 
+░░░░█▀▄▄▄█░▀▀░░░░░░ 
+░░░░▌░▄▄▄▐▌▀▀▀░░░░░ 
+░▄░▐░░░▄▄░█░▀▀░░░░░ 
+░▀█▌░░░▄░▀█▀░▀░░░░░ 
+░░░░░░░░▄▄▐▌▄▄░░░░░ 
+░░░░░░░░▀███▀█░▄░░░ 
+░░░░░░░▐▌▀▄▀▄▀▐▄░░░ 
+░░░░░░░▐▀░░░░░░▐▌░░ 
+░░░░░░░█░░░░░░░░█░░`
 
 export const pageQuery = graphql`
   query IndexQuery {
