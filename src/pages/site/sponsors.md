@@ -6,3 +6,4 @@ sponsorlogos:
   - logo: /img/oyy_color.png
     url: 'http://www.oyy.fi/'
 ---
+
