@@ -12,6 +12,7 @@ export default () => {
         <div className="column">
           <div className="section">
             <form name="signup" method="POST" netlify>
+              <input type="hidden" name="form-name" value="signup" style={{display: 'none'}} />
               <div className="field">
                 <label className="has-text-grey-light label">Nimi</label>
                 <div className="control has-icons-left has-icons-right">
