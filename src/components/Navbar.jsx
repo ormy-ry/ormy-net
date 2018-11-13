@@ -52,7 +52,7 @@ export default class Navbar extends Component {
             </div>
             <div className="navbar-end">
               <a
-                href="https://goo.gl/forms/LvRdfpfqYieirYvx1"
+                href="/email-signup"
                 className="navbar-item is-uppercase"
               >
                 <FontAwesomeIcon
