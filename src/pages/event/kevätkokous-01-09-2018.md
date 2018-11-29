@@ -2,7 +2,7 @@
 templateKey: EventPost
 title: Kevätkokous
 date: '2018-04-04 16:00'
-location: Tellus Innovation Arena
+location: Telluksen Brisk-tila
 ---
 Oulun yliopiston raskaan musiikin ystävät ÖRMY ry kutsuu jäsenistönsä sääntömääräiseen kevätkokoukseen!
 
