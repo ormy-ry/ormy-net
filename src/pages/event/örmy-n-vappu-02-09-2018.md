@@ -2,7 +2,7 @@
 templateKey: EventPost
 title: 'ÖRMY:n vappu'
 date: '2018-04-27 18:00'
-location: Tiedonkaari 6 kerhis
+location: 'Tiedonkaari 6:n kerhohuone'
 ---
 Vappu? Vappu. Mitäs siitä sen enempää runoilemaan. Jokainen opiskelija tietää, että Vappu on vain tekosyy juoda enemmän kuin keho kestää ja juhlia kuin viimeistä päivää. Tällä kertaa näytämme kiitoksemme kevään tai vuoden 2018 jäsenmaksun maksaneille tarjoamalla munkkeja ja parin tunnin eksklusiivista kerhoilua. Jäsenet voivat siis saapua jo klo 18, kun taas muut saavat odottaa klo 20 asti. Mahdollisesta saunasta tiedotetaan myöhemmin. Omat simat mukaan!
 
