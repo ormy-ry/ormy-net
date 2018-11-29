@@ -8,6 +8,6 @@ Yhteydenotot, palautteet ja sivustoon liittyvät kommentit sähköpostilla osoit
 
 Löydät Örmyn myös seuraavista sosiaalisen median kanavista:
 
-* [Facebook /uni.ormy](https://www.facebook.com/groups/uni.ormy/)
+* [Facebook](https://www.facebook.com/ORMY.ry/)
 * [Instagram @ormy.ry](https://www.instagram.com/ormy.ry/)
 * [Discord ](https://discord.gg/346NGY4)
