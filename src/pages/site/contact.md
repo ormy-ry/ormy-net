@@ -4,9 +4,9 @@ identifier: contact
 ---
 Yhteydenotot, palautteet ja sivustoon liittyvät kommentit sähköpostilla osoitteeseen <mailto:ormy.ry@gmail.com>
 
-Örmyn Y-tunnus on 2843421-4.
+ÖRMY ry:n Y-tunnus on 2843421-4.
 
-Löydät Örmyn myös seuraavista sosiaalisen median kanavista:
+Löydät ÖRMY:n myös seuraavista sosiaalisen median kanavista:
 
 * [Facebook](https://www.facebook.com/ORMY.ry/)
 * [Instagram @ormy.ry](https://www.instagram.com/ormy.ry/)
