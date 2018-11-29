@@ -2,7 +2,7 @@
 templateKey: EventPost
 title: Syyskokous
 date: '2018-11-13 17:00'
-location: TellUs Brisk
+location: Telluksen Brisk-tila
 ---
 Oulun yliopiston raskaan musiikin ystävät ÖRMY ry kutsuu jäsenistönsä SÄÄNTÖMÄÄRÄISEEN SYYSKOKOUKSEEN. Kokous järjestetään 13.11. Oulun yliopistolla TellUsissa Brisk-tilassa (Pentti Kaiteran katu 1, 90570 Oulu) klo 17.00 alkaen. Kutsun antoi ÖRMY ry:n hallitus 17.10.
 
