@@ -1,6 +1,6 @@
 ---
 templateKey: EventPost
-title: 'Anti-chirstmas party '
+title: 'Anti-christmas party '
 date: '2017-12-20 17:00'
 location: Tiedonkaari 6 kerhis
 ---
