@@ -2,7 +2,7 @@
 templateKey: EventPost
 title: Tutustumisammunnat
 date: '2018-11-17 11:00'
-location: 'Hiukkavaaran ampumarata 150m (Hiukanreitti 225) ja Tiedonkaari 6:n'
+location: 'Hiukkavaaran ampumarata (Hiukanreitti 225) ja Tiedonkaari 6:n kerhohuone'
 ---
 Kun on Tutustumissammunnat, niin nyt on myös Tutustumisammunnat. Yhteistyössä PAM:n eli Pohjanmaan Akateemisen Maanpuolustusseuran kanssa örmyläiset pääsevät kokeilemaan erilaisia tuliaseita valvotussa ympäristössä. Paikkana on Hiukkavaaran ampumarata, ajankohtana lauantai 17. marraskuuta kello 11:stä alkaen. Riippuen osallistujien määrästä tapahtuma voi kestää hämärään asti. Osallistuminen maksaa ÖRMY:n jäsenille 27 euroa ja muille 30 euroa. Vastineeksi rahalle saa 40 patruunaa per naama. Kulku Hiukkavaaraan on omalla vastuulla, mutta yhteiskuljetusta voi toki kysellä. Maksuohjeet tulevat sähköpostilla, osallistumismaksun eräpäivä on 14.11.2018.
 
