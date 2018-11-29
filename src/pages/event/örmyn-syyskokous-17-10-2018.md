@@ -1,6 +1,6 @@
 ---
 templateKey: EventPost
-title: Örmyn syyskokous
+title: Syyskokous
 date: '2018-11-13 17:00'
 location: TellUs Brisk
 ---
