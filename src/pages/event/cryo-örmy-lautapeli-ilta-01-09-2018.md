@@ -1,6 +1,6 @@
 ---
 templateKey: EventPost
-title: Cryo & ÖRMY lautapeli-ilta
+title: 'Cryon & ÖRMY:n lautapeli-ilta'
 date: '2018-04-05 18:00'
 location: Apinatalo
 ---
