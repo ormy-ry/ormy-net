@@ -1,6 +1,6 @@
 ---
 templateKey: EventPost
-title: 'ÖRMY:n ompeluilta'
+title: Ompelutalkoot
 date: '2018-09-28 18:00'
 location: 'Tiedonkaaren kerhis (Tiedonkaari 6, Oulu)'
 ---
