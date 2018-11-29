@@ -2,7 +2,7 @@
 templateKey: EventPost
 title: Ompelutalkoot
 date: '2018-09-28 18:00'
-location: 'Tiedonkaaren kerhis (Tiedonkaari 6, Oulu)'
+location: 'Tiedonkaari 6:n kerhohuone'
 ---
 ÖRMY juoksee taas terävien esineiden kanssa kun ompeluiltama järjestetään Syynimaan kerhohuoneella. Jos nurkkiisi ja muihin koloihisi on kerääntynyt haalarimerkkejä, jotka pitäisi jotenkin kiinnittää haalareihin, tapahtuman nimestä voi ottaa vinkkiä mitä siellä tehdään. Tuo siis omat ompelukäyttöön tarkoitetut neulasi paikalle langan ja juoman kanssa, ja koeta olla pistämättä itseäsi.
 
