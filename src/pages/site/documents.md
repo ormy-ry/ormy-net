@@ -2,7 +2,7 @@
 title: Dokumentit
 identifier: documents
 ---
-Örmyn ja sen hallituksen toimintaan liittyviä dokumentteja löytyy Örmyn Facebook -sivuilta sekä Google Drivestä. 
+ÖRMY:n ja sen hallituksen toimintaan liittyviä asiakirjoja löytyy ÖRMY:n Facebook-ryhmästä sekä Google Drivestä. 
 
 * [Yhdistyslaki](http://www.finlex.fi/fi/laki/ajantasa/1989/19890503)
 * [Kokouspöytäkirjat](https://drive.google.com/open?id=0B-QxfGwoC4nGMDU1aVpfNjYtd1E)
